@@ -117,6 +117,12 @@ service --status-all 2>&1 | head -20
 - `[ - ]` indicates services are stopped/inactive
 - Limited services due to containerized environment
 
+### 📸 Terminal output: process and service commands
+
+*Ubuntu terminal showing `ps aux`, `top -bn1`, `ps aux --sort=-%mem`, and `service --status-all`.*
+
+![Process and service commands terminal output](screenshots/Screenshot%20(7).png)
+
 ---
 
 ### 5. Inspecting a Specific Service: dbus
@@ -143,6 +149,12 @@ service dbus status
 - Service is installed but not active
 - This is expected in containerized environments where dbus may not be required
 - In a full desktop/server environment, dbus typically runs automatically
+
+---
+
+### 5b. Service status (screenshot)
+
+![Service status check](screenshots/Screenshot%20(8).png)
 
 ---
 
@@ -200,6 +212,8 @@ drwxr-sr-x  2 root systemd-journal     40 Nov 21 01:55 journal
 - `btmp` - Failed login attempts
 - `lastlog` - Last login information
 - `faillog` - Failed authentication attempts
+
+![Log directory listing](screenshots/Screenshot%20(9).png)
 
 ---
 
@@ -281,6 +295,8 @@ dmesg | tail -20
 - Kernel messages help diagnose hardware/driver issues
 - Timestamps indicate boot progression
 - In production, you'd see hardware detection, module loading, etc.
+
+![Log and kernel output](screenshots/Screenshot%20(10).png)
 
 ---
 
@@ -401,6 +417,18 @@ When an alert fires at 3 AM, you won't have time to Google basic commands. This 
 - Day 02 & Day 03 DevOps notes
 - System log file documentation
 - Ubuntu system administration guides
+
+---
+
+## 📸 Practice Session Screenshots
+
+| Screenshot | Description |
+|------------|-------------|
+| [Screenshot (7)](screenshots/Screenshot%20(7).png) | Process listing (`ps aux`, `top -bn1`), memory-sorted processes, and `service --status-all` on Ubuntu |
+| [Screenshot (8)](screenshots/Screenshot%20(8).png) | Service status checks |
+| [Screenshot (9)](screenshots/Screenshot%20(9).png) | Log directory and log exploration |
+| [Screenshot (10)](screenshots/Screenshot%20(10).png) | Log output and kernel messages |
+| [Screenshot (11)](screenshots/Screenshot%20(11).png) | Additional practice output |
 
 ---
 
