@@ -1,0 +1,8 @@
+Learning Linux file I/O - Day 06
+DevOps engineers read logs and configs daily
+Mastering redirection makes you faster
+Use > to overwrite a file
+Use >> to append without erasing
+cat reads the full file at once
+head and tail read parts of a file
+tee writes to stdout AND a file simultaneously
